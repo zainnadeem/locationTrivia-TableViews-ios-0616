@@ -19,8 +19,6 @@
 		D892181719543E5800FF6E4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89217F619543E5800FF6E4A /* Foundation.framework */; };
 		D892181819543E5800FF6E4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D89217FA19543E5800FF6E4A /* UIKit.framework */; };
 		D892182019543E5800FF6E4A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D892181E19543E5800FF6E4A /* InfoPlist.strings */; };
-		D892182D19543EB100FF6E4A /* FISLocationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D892182C19543EB100FF6E4A /* FISLocationsTableViewController.m */; };
-		D892183019543EBC00FF6E4A /* FISTriviaTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D892182F19543EBC00FF6E4A /* FISTriviaTableViewController.m */; };
 		D892183519543EF200FF6E4A /* FISLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = D892183219543EF200FF6E4A /* FISLocation.m */; };
 		D892183619543EF200FF6E4A /* FISTrivia.m in Sources */ = {isa = PBXBuildFile; fileRef = D892183419543EF200FF6E4A /* FISTrivia.m */; };
 		D892183819545B8B00FF6E4A /* locationTriviaViewsSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = D892183719545B8B00FF6E4A /* locationTriviaViewsSpec.m */; };
@@ -56,10 +54,6 @@
 		D892181519543E5800FF6E4A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D892181D19543E5800FF6E4A /* locationTrivia-tableviewsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "locationTrivia-tableviewsTests-Info.plist"; sourceTree = "<group>"; };
 		D892181F19543E5800FF6E4A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D892182B19543EB100FF6E4A /* FISLocationsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISLocationsTableViewController.h; sourceTree = "<group>"; };
-		D892182C19543EB100FF6E4A /* FISLocationsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISLocationsTableViewController.m; sourceTree = "<group>"; };
-		D892182E19543EBC00FF6E4A /* FISTriviaTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISTriviaTableViewController.h; sourceTree = "<group>"; };
-		D892182F19543EBC00FF6E4A /* FISTriviaTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISTriviaTableViewController.m; sourceTree = "<group>"; };
 		D892183119543EF200FF6E4A /* FISLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISLocation.h; sourceTree = "<group>"; };
 		D892183219543EF200FF6E4A /* FISLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISLocation.m; sourceTree = "<group>"; };
 		D892183319543EF200FF6E4A /* FISTrivia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FISTrivia.h; sourceTree = "<group>"; };
@@ -130,10 +124,6 @@
 				D892180519543E5800FF6E4A /* FISAppDelegate.h */,
 				D892180619543E5800FF6E4A /* FISAppDelegate.m */,
 				D892180819543E5800FF6E4A /* Main.storyboard */,
-				D892182B19543EB100FF6E4A /* FISLocationsTableViewController.h */,
-				D892182C19543EB100FF6E4A /* FISLocationsTableViewController.m */,
-				D892182E19543EBC00FF6E4A /* FISTriviaTableViewController.h */,
-				D892182F19543EBC00FF6E4A /* FISTriviaTableViewController.m */,
 				D892183119543EF200FF6E4A /* FISLocation.h */,
 				D892183219543EF200FF6E4A /* FISLocation.m */,
 				D892183319543EF200FF6E4A /* FISTrivia.h */,
@@ -309,9 +299,7 @@
 				D892180319543E5800FF6E4A /* main.m in Sources */,
 				D892183619543EF200FF6E4A /* FISTrivia.m in Sources */,
 				D892183519543EF200FF6E4A /* FISLocation.m in Sources */,
-				D892183019543EBC00FF6E4A /* FISTriviaTableViewController.m in Sources */,
 				D892180719543E5800FF6E4A /* FISAppDelegate.m in Sources */,
-				D892182D19543EB100FF6E4A /* FISLocationsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

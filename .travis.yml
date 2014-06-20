@@ -1,0 +1,11 @@
+language: objective-c
+
+before_install:
+  - gem install cocoapods
+  - brew update
+  - brew upgrade xctool
+  
+notifications:
+  webhooks: http://progress.flatironschool.com/submissions
+
+script: xctool -reporter json-stream -workspace locationTrivia-tableviews.xcworkspace -sdk iphonesimulator -destination "name=iPhone Retina (4-inch)" -scheme locationTrivia-tableviews build test
