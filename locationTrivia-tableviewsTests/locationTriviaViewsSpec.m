@@ -64,84 +64,90 @@ describe(@"locationTriviaViews", ^{
         // reload the displayed data
         [locationVC.tableView reloadData];
     });
-
+    
     describe(@"Locations Table View", ^{
         __block UITableView *table;
-        beforeAll(^{
+        
+        beforeEach(^{
             table = (UITableView *)[tester waitForViewWithAccessibilityLabel:@"Locations Table"];
         });
-
+        
         it(@"should display three cells", ^{
             expect([table numberOfRowsInSection:0]).to.equal(3);
         });
-
+        
         it(@"should display the name in the textLabel", ^{
             NSIndexPath *row = [NSIndexPath indexPathForRow:0 inSection:0];
             UITableViewCell *cell = (UITableViewCell *)[tester waitForCellAtIndexPath:row inTableViewWithAccessibilityIdentifier:@"Locations Table"];
-
+            
             expect(cell.textLabel.text).to.equal(@"The Empire State Building");
-
+            
             row = [NSIndexPath indexPathForRow:1 inSection:0];
             cell = (UITableViewCell *)[tester waitForCellAtIndexPath:row inTableViewWithAccessibilityIdentifier:@"Locations Table"];
-
+            
             expect(cell.textLabel.text).to.equal(@"Bowling Green");
-
+            
             row = [NSIndexPath indexPathForRow:2 inSection:0];
             cell = (UITableViewCell *)[tester waitForCellAtIndexPath:row inTableViewWithAccessibilityIdentifier:@"Locations Table"];
-
+            
             expect(cell.textLabel.text).to.equal(@"Statue Of Liberty");
         });
-
+        
         it(@"should display the number of trivia in the detailTextLabel", ^{
             NSIndexPath *row = [NSIndexPath indexPathForRow:0 inSection:0];
             UITableViewCell *cell = (UITableViewCell *)[tester waitForCellAtIndexPath:row inTableViewWithAccessibilityIdentifier:@"Locations Table"];
-
+            
             expect(cell.detailTextLabel.text).to.equal(@"2");
-
+            
             row = [NSIndexPath indexPathForRow:1 inSection:0];
             cell = (UITableViewCell *)[tester waitForCellAtIndexPath:row inTableViewWithAccessibilityIdentifier:@"Locations Table"];
-
+            
             expect(cell.detailTextLabel.text).to.equal(@"3");
-
+            
             row = [NSIndexPath indexPathForRow:2 inSection:0];
             cell = (UITableViewCell *)[tester waitForCellAtIndexPath:row inTableViewWithAccessibilityIdentifier:@"Locations Table"];
-
+            
             expect(cell.detailTextLabel.text).to.equal(@"1");
         });
+        
+        it(@"Should push on trivia VC when a cell is tapped", ^{
+            NSIndexPath *row = [NSIndexPath indexPathForRow:0 inSection:0];
+            [tester tapRowAtIndexPath:row inTableViewWithAccessibilityIdentifier:@"Locations Table"];
+            [tester waitForViewWithAccessibilityLabel:@"Trivia Table"];
+            [tester tapViewWithAccessibilityLabel:@"Back"];
+        });
+        
     });
-
-    it(@"Should push on trivia VC when a cell is tapped", ^{
-        NSIndexPath *row = [NSIndexPath indexPathForRow:0 inSection:0];
-        [tester tapRowAtIndexPath:row inTableViewWithAccessibilityIdentifier:@"Locations Table"];
-        [tester waitForViewWithAccessibilityLabel:@"Trivia Table"];
-        [tester tapViewWithAccessibilityLabel:@"Back"];
-    });
-
+    
     describe(@"Trivia ViewController", ^{
         __block UITableView *table;
-        beforeAll(^{
+        beforeEach(^{
             NSIndexPath *row = [NSIndexPath indexPathForRow:0 inSection:0];
             [tester tapRowAtIndexPath:row inTableViewWithAccessibilityIdentifier:@"Locations Table"];
             table = (UITableView *)[tester waitForViewWithAccessibilityLabel:@"Trivia Table"];
         });
-
+        
         it(@"Should display 2 trivia", ^{
             expect([table numberOfRowsInSection:0]).to.equal(2);
         });
-
+        
         it(@"Should display the trivia content in each textLabel", ^{
             NSIndexPath *row = [NSIndexPath indexPathForRow:0 inSection:0];
             UITableViewCell *cell = (UITableViewCell *)[tester waitForCellAtIndexPath:row inTableViewWithAccessibilityIdentifier:@"Trivia Table"];
-
+            
             expect(cell.textLabel.text).to.equal(@"1,454 Feet Tall");
-
+            
             row = [NSIndexPath indexPathForRow:1 inSection:0];
             cell = (UITableViewCell *)[tester waitForCellAtIndexPath:row inTableViewWithAccessibilityIdentifier:@"Trivia Table"];
-
+            
             expect(cell.textLabel.text).to.equal(@"Cost $24,718,000 to build");
         });
+        
+        afterEach(^{
+            [tester tapViewWithAccessibilityLabel:@"Back"];
+        });
     });
-
+    
 });
 
 SpecEnd
