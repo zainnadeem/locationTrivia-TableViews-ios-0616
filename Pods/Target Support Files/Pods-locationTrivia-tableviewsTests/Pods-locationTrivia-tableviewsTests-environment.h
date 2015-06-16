@@ -56,9 +56,9 @@
 
 // Specta
 #define COCOAPODS_POD_AVAILABLE_Specta
-#define COCOAPODS_VERSION_MAJOR_Specta 0
-#define COCOAPODS_VERSION_MINOR_Specta 2
-#define COCOAPODS_VERSION_PATCH_Specta 99
+#define COCOAPODS_VERSION_MAJOR_Specta 1
+#define COCOAPODS_VERSION_MINOR_Specta 0
+#define COCOAPODS_VERSION_PATCH_Specta 2
 
 // Swizzlean
 #define COCOAPODS_POD_AVAILABLE_Swizzlean

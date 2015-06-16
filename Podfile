@@ -9,10 +9,11 @@ target "locationTrivia-tableviews" do
 end
 
 target "locationTrivia-tableviewsTests" do
-  pod 'Specta',     :git=>'git@github.com:specta/specta.git', :commit=>'93e4eac3fc31e0539261ae2fb633cae7e6b93b33' 
+  pod 'Specta'
   pod 'Expecta',     '~> 0.2.4'                                                 
 
-  pod 'KIF', '~> 3.2'
+  pod 'KIF', '~> 3.0'                                                           
+
   pod 'Swizzlean', '~> 0.1.1' 
 
   pod 'OCMockito'

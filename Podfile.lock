@@ -10,27 +10,17 @@ PODS:
   - OHHTTPStubs (3.1.12):
     - OHHTTPStubs/Core (= 3.1.12)
   - OHHTTPStubs/Core (3.1.12)
-  - Specta (0.2.99)
+  - Specta (1.0.2)
   - Swizzlean (0.1.2)
 
 DEPENDENCIES:
   - Expecta (~> 0.2.4)
-  - KIF (~> 3.2)
+  - KIF (~> 3.0)
   - OCMock (~> 2.2.4)
   - OCMockito
   - OHHTTPStubs (~> 3.1.2)
-  - Specta (from `git@github.com:specta/specta.git`, commit `93e4eac3fc31e0539261ae2fb633cae7e6b93b33`)
+  - Specta
   - Swizzlean (~> 0.1.1)
-
-EXTERNAL SOURCES:
-  Specta:
-    :commit: 93e4eac3fc31e0539261ae2fb633cae7e6b93b33
-    :git: git@github.com:specta/specta.git
-
-CHECKOUT OPTIONS:
-  Specta:
-    :commit: 93e4eac3fc31e0539261ae2fb633cae7e6b93b33
-    :git: git@github.com:specta/specta.git
 
 SPEC CHECKSUMS:
   Expecta: cfaf1d3e2e194ca704a25e997093d30a1ce70b61
@@ -39,7 +29,7 @@ SPEC CHECKSUMS:
   OCMock: a6a7dc0e3997fb9f35d99f72528698ebf60d64f2
   OCMockito: 4981140c9a9ec06c31af40f636e3c0f25f27e6b2
   OHHTTPStubs: 8cf0cfe6f34f13fc88fdf5b2a1b2c2536e8c0261
-  Specta: 364e12c765a21e5a11a319109c84a25bbb15e4dd
+  Specta: 9cec98310dca411f7c7ffd6943552b501622abfe
   Swizzlean: 164ef9d428a35ef61a404747ab40010f303dffa2
 
 COCOAPODS: 0.37.2
