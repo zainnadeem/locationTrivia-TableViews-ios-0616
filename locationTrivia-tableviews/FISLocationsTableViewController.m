@@ -44,7 +44,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RightDetail" forIndexPath:indexPath];
     FISLocation *currentLocation = self.locations[indexPath.row];
     cell.textLabel.text = currentLocation.name;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)currentLocation.trivia.count];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%lu", currentLocation.trivia.count];
 
     // Configure the cell...
     

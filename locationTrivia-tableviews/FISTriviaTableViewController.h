@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FISTrivia.h"
+#import "FISTrivium.h"
 
 @interface FISTriviaTableViewController : UITableViewController
 
 @property (strong, nonatomic) NSArray *trivia;
+
 @end

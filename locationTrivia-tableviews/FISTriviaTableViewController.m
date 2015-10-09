@@ -42,7 +42,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TriviaCell" forIndexPath:indexPath];
-    FISTrivia *currentTrivia = self.trivia[indexPath.row];
+    FISTrivium *currentTrivia = self.trivia[indexPath.row];
     cell.textLabel.text = currentTrivia.content;
     // Configure the cell...
     
