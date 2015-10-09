@@ -143,13 +143,13 @@
 		D89217FC19543E5800FF6E4A /* locationTrivia-tableviews */ = {
 			isa = PBXGroup;
 			children = (
+				D892180519543E5800FF6E4A /* FISAppDelegate.h */,
+				D892180619543E5800FF6E4A /* FISAppDelegate.m */,
+				D892180819543E5800FF6E4A /* Main.storyboard */,
 				72DD18F819A53438004F3C2F /* FISLocationsTableViewController.h */,
 				72DD18F919A53438004F3C2F /* FISLocationsTableViewController.m */,
 				72DD18FB19A53996004F3C2F /* FISTriviaTableViewController.h */,
 				72DD18FC19A53996004F3C2F /* FISTriviaTableViewController.m */,
-				D892180519543E5800FF6E4A /* FISAppDelegate.h */,
-				D892180619543E5800FF6E4A /* FISAppDelegate.m */,
-				D892180819543E5800FF6E4A /* Main.storyboard */,
 				D892183119543EF200FF6E4A /* FISLocation.h */,
 				D892183219543EF200FF6E4A /* FISLocation.m */,
 				4D55490F1BC81527001E3D77 /* FISTrivium.h */,
