@@ -1,7 +1,4 @@
----
-tags: tableviews, arrays, UINavigationController
-language: objc
----
+
 
 # LocationTrivia Views
 
