@@ -18,3 +18,5 @@
 
 Make multiple sections. Each section should represent a `FISLocation` with the section's header being the name property and each cell in it to be the different `FISTrivium` objects relevant to that location.  
 **Note:** *This is hard* Allow for the reordering of Locations in your table... [helpful link](https://developer.apple.com/library/ios/documentation/userexperience/conceptual/tableview_iphone/ManageReorderRow/ManageReorderRow.html)
+
+<a href='https://learn.co/lessons/locationTrivia-TableViews' data-visibility='hidden'>View this lesson on Learn.co</a>
